@@ -39,7 +39,7 @@ window.onload = function() {
     }
 
     function generateColor(colorCode) {
-        return 'rgb(' + colorCode + ',' + colorCode + ',' + colorCode + ')';
+        return 'rgb(' + ((55 + colorCode) %100) + ',' + colorCode + ',' + colorCode + ')';
     }
 
     function getRandomInt(min, max) {
